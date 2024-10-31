@@ -22,7 +22,7 @@ import static java.util.Optional.ofNullable;
 @Component
 class ReallyShakyBankingCoreSystemService implements BankingCoreSystmeService {
 
-    private Map<String, Account> theBank = new HashMap();
+    private Map<String, Account> theBank = new HashMap() // la til en feil
 
     @Override
     public void transfer(Transaction tx, String fromAccount, String toAccount) {
